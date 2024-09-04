@@ -3,7 +3,7 @@ var cashGiven = document.getElementById("cash");
 var checkBtn = document.getElementById("btn");
 var errMsg = document.getElementById("error");
 var noOfNotes = document.querySelectorAll(".no-of-notes");
-var notes = [500, 100, 20, 10, 5, 1];
+var notes = [500, 200, 100, 50, 20, 10, 5, 1];
 
 function errorHandle(error) {
     errMsg.style.display = "block";
