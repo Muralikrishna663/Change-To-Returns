@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Retail Bill Calculator</title>
 </head>
-
 <body>
     <div class="container">
         <header><strong>
@@ -16,30 +14,27 @@
             </strong></header>
         <p class="description">
             Enter the bill amount and the cash given
-            by the customer and know minimum number 
-            of notes to return
+            by the customer and know the minimum number 
+            of notes to return.
         </p>
 
-        <label for="input-bill">
+        <label for="bill">
             <strong>Enter the bill amount</strong>
         </label>
-        <input class="input-bill" id="bill" />
-        <label for="cash-given">
-            <strong> Cash Given</strong>
+        <input type="number" class="input-bill" id="bill" />
+        <label for="cash">
+            <strong>Cash Given</strong>
         </label>
-        <input class="cash-given" id="cash" />
+        <input type="number" class="cash-given" id="cash" />
         <button class="check-btn" id="btn">Check</button>
-        <p id="error">
-        </p>
+        <p id="error"></p>
 
         <table class="table">
             <caption>
                 <strong>Return Change</strong>
             </caption>
-            <tr class="row">
-                <th class="row">No of Notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
+            <tr>
+                <th>No of Notes</th>
                 <td class="no-of-notes"></td>
                 <td class="no-of-notes"></td>
                 <td class="no-of-notes"></td>
@@ -48,19 +43,16 @@
                 <td class="no-of-notes"></td>
             </tr>
             <tr>
-                <th class="row">Notes</th>
-                <td class="row">500</td>
-                <td class="row">200</td>
-                <td class="row">100</td>
-                <td class="row">50</td>
-                <td class="row">20</td>
-                <td class="row">10</td>
-                <td class="row">5</td>
-                <td class="row">1</td>
+                <th>Notes</th>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
             </tr>
         </table>
     </div>
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>
